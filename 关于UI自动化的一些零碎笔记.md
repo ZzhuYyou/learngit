@@ -37,7 +37,7 @@ if __name__ == '__main__':
 def setUp(self) -> None:
     self.driver=webdriver.Chrome()
     self.driver.get('http://124.221.246.225:8080/logout')
-用例执行结束后可以用（关闭浏览器和延迟关闭时间）<br/>
+用例执行结束后可以用（关闭浏览器和延迟关闭时间）
 def tearDown(self) -> None:
     time.sleep(4)
     self.driver.quit()
@@ -57,7 +57,7 @@ with open('../report/report.html','wb') as f:
 ### zmail发送邮件<br/>
 第一步就是先导入zmail包，然后定义个变量把自己的邮箱账号和授权码放进去，然后用zmail.sever给进行使用<br/>
 ```
-mymail={'username':'Zhuyouzai7@163.com','password':'EFYNWTSHNGFGMJKD'}
+mymail={'username':'Zhuyouzai7@163.com','password':'授权码'}
 server=zmail.server(mymail['username'],mymail['password'])
 ```
 第二步再写邮件的内容(标题subject，正文content_text，附件Attachments）,用字典类型<br/>
