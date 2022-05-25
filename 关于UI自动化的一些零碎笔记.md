@@ -2,11 +2,10 @@
 1.导入unittest包，selenium包<br/>
 2.新建一个类继承unittest里面的TestCase<br/>
 3.在类里面test方法，一个方法就是一个用例 <br/>
-
-
+```
  def test_01(self):
  用self.drvier=webdriver.Chome()//打开谷歌浏览器
-
+```
 
 打开网址<br/>
 
